@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Usuarios</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename ='css/login.css')}}">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-6 mx-auto p-0">
+            <div class="card">
+                <div class="login-box">
+                    <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarse</label>
+                        <div class="login-space">
+                            <div class="login">
+                                <div class="group"> <label for="user" class="label">Usuario</label> <input id="user" type="text" class="input" placeholder="Ingrese su usuario"> </div>
+                                <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Ingrese su password"> </div>
+                                <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Mantenerme Loguead@</label> </div>
+                                <div class="group"> <input type="submit" class="button" value="Ingresar"> </div>
+                                <div class="hr"></div>
+                                <div class="foot"> <a href="#">Olvido su contrasena?</a> </div>
+                            </div>
+                            <div class="sign-up-form">
+                                <div class="group"> <label for="user" class="label">Usuario</label> <input id="user" type="text" class="input" placeholder="Crear su Usuario"> </div>
+                                <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Crear su password"> </div>
+                                <div class="group"> <label for="pass" class="label">Repetir Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Repetir su password"> </div>
+                                <div class="group"> <label for="pass" class="label">Email</label> <input id="pass" type="text" class="input" placeholder="Ingrese su email"> </div>
+                                <div class="group"> <input type="submit" class="button" value="Registrame"> </div>
+                                <div class="hr"></div>
+                                <div class="foot"> <label for="tab-1">ya eres miembro?</label> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

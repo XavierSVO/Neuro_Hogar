@@ -1,0 +1,42 @@
+<!--DEbemos guardar la pagina en una carpeta templates-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--BOOSTRAP4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <!--BOOSTRAP4-->
+    <title>Sitio Web Domotica Arduino</title>
+    <!--CSS personalizado dentro de main.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename ='css/main.css')}}">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+</head>
+<body>
+    <div class="ventana">
+        <div class="ventana-snip">
+            <h2 class="tituloPage">Boton para el encendido de un foco</h2>
+        <div class="ui-button">
+            <div class="ui-click">|||</div>
+            <div class="ui-state">
+                <span class="ui-on">ON</span>
+                <span class="ui-off">OFF</span>
+            </div>
+        </div>
+    
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".ui-button .ui-click").click(function(){
+                    $(".ui-button").toggleClass("on");
+                });
+            });
+        </script>
+        </div>
+    </div>   
+</body>
+</html>
